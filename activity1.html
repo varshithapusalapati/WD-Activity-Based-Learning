@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f1f4f9}
+.sidebar{width:200px;height:100vh;background:#243b55;color:white;position:fixed;padding:20px}
+.sidebar h2{color:#5eead4}
+.sidebar p{padding:12px;background:#344e6b;border-radius:5px}
+.main{margin-left:220px;padding:20px}
+.card{background:white;padding:18px;margin:10px;border-radius:10px;flex:1}
+.cards{display:flex;flex-wrap:wrap}
+h2{color:#243b55}
+table{width:100%;background:white;border-collapse:collapse}
+th,td{padding:12px;border:1px solid #ddd;text-align:center}
+th{background:#344e6b;color:white}
+.bar{background:#ddd;height:12px;border-radius:10px}
+.fill{background:#16a085;height:12px;border-radius:10px}
+.notice{background:white;padding:15px;margin:10px;border-left:4px solid #16a085}
+@media(max-width:600px){
+.sidebar{width:100%;height:auto;position:relative}
+.main{margin-left:0}
+.cards{display:block}
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+<h2>STUDENT</h2>
+<p>Dashboard</p>
+<p>My Profile</p>
+<p>Results</p>
+<p>Attendance</p>
+<p>Subjects</p>
+<p>Exams</p>
+<p>Announcements</p>
+</div>
+
+<div class="main">
+<h1>Student Dashboard</h1>
+<div class="cards">
+<div class="card"><h3>Student Name</h3><p>Rahul Kumar</p></div>
+<div class="card"><h3>Roll Number</h3><p>23CS101</p></div>
+<div class="card"><h3>Semester</h3><p>Semester 3</p></div>
+</div>
+
+<h2>Semester Results</h2>
+<table>
+<tr><th>Subject</th><th>Marks</th><th>Grade</th></tr>
+<tr><td>Python</td><td>90</td><td>A+</td></tr>
+<tr><td>Java</td><td>85</td><td>A</td></tr>
+<tr><td>Maths</td><td>80</td><td>A</td></tr>
+</table>
+
+<h2>Attendance</h2>
+<div class="card">
+<p>Python - 90%</p><div class="bar"><div class="fill" style="width:90%"></div></div>
+<p>Java - 85%</p><div class="bar"><div class="fill" style="width:85%"></div></div>
+<p>Maths - 75%</p><div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<h2>Subject Information</h2>
+<div class="cards">
+<div class="card">Python Programming</div>
+<div class="card">Java Programming</div>
+<div class="card">Mathematics</div>
+</div>
+
+<h2>Examination Schedule</h2>
+<table>
+<tr><th>Subject</th><th>Date</th><th>Time</th></tr>
+<tr><td>Python</td><td>10-11-2026</td><td>10 AM</td></tr>
+<tr><td>Java</td><td>12-11-2026</td><td>10 AM</td></tr>
+<tr><td>Maths</td><td>15-11-2026</td><td>10 AM</td></tr>
+</table>
+
+<h2>Announcements</h2>
+<div class="notice">Internal examination starts next week.</div>
+<div class="notice">Submit assignments before Friday.</div>
+</div>
+</body>
+</html>
