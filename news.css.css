@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: lightgray;
+}
+
+header {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+section {
+    background: orange;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: navy;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
